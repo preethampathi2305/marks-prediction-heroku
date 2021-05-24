@@ -27,7 +27,7 @@ def home():
 def submitting():
     if request.method=='POST':
         num=request.form['exname']
-    return render_template("home.html",lr.predict([[num]]))
+    return render_template("home.html",marks=lr.predict([[num]]))
 
 
 
