@@ -11,9 +11,9 @@ app = Flask(__name__)
 #sending arguments to html
 #fav_artists=['dr.dre','kendrick lamar','ice cube','eminem']
 
-'''@app.route('/') 
+@app.route('/') 
 def hello():
-    return render_template("home.html")'''
+    return render_template("home.html")
 
 '''@app.route('/about')
 def about():
@@ -23,7 +23,7 @@ def about():
 def home():
     return redirect('/')'''
 #getting input and returning output
-@app.route('/',methods=['POST'])
+@app.route('/submit',methods=['POST'])
 def submitting():
     if request.method=='POST':
         num=request.form['exname']

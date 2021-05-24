@@ -11,13 +11,13 @@
                 <center><h1>Get your marks predictions</h1></center>
             </div>
             <h2>Enter the input Number:</h2>
-            <form method="post" action='/' class="form-inline">
+            <form method="POST" action='/submit' class="form-inline">
                 <label>How Many Hours did you study?</label>
                 <input class="form-control" type="number" name="exname" placeholder="Hours"/>
                 <button class="btn btn-primary bth-lg">Get Score</button>
             </form>
             {% if marks %}
-            <h1 class="text text-success">Your Predicted Marks: {{marks}</h1>
+            <h1 class="text text-success">Your Predicted Marks: {{marks}}</h1>
             {% endif %}
         </div>
     </body>
